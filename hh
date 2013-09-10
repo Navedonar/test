@@ -1,0 +1,5 @@
+SET
+@NPC_ENTRY := 12160,
+@NPC_HEALTH := 256000,
+@GET_HP_COL := 63681;
+UPDATE creature_template SET Health_mod = (@NPC_HEALTH/@GET_HP_COL), Exp=3 WHERE Entry = @NPC_ENTRY;
